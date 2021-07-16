@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* This is how we declare global variables and --main-bg-color is our global variable */
+ /* Using var() we can modify multiple containers simultneously */
+:root{
+    --main-bg-color: #2874f0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: #f0f0f0;
+}
+
+header{
+    background-color: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+    height: 50px;
+
+    /* to keep nav bar fixed when we scrol */
+    position: sticky;
+    z-index:99;
+    top:0;
+}
+
+nav{
+    display: flex;
+}
+.logo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo img{
+
+    width: 88px;
+    padding: 0px 25px;
+}
+
+nav ul{
+    
+    display: flex;
+
+    /* This is important step for alligning contents to center by assigning height of header to ul */
+    
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0px 28px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+
+    width: 493px;
+    height: 25px;
+    /* It effect padding of placeholder content */
+    padding: 0px 12px;
+    font-weight: 5px;      
+
+}
+
+.container{
+    min-height: calc(100vh - 50px - 12vh);
+}
+.slider{
+
+    margin: 12px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider img{
+
+    width: 90vw;
+    height: 60vh;
+
+}
+
+.card{
+    margin: 10px;
+    height: 40vh;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+}
+.card-item{
+
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.item{
+    margin: 5px;
+}
+
+.item img{
+    width: 190px;
+    height: 140px;
+}
+.foot-flex{
+
+    margin: 30px 0px 0px 0px;
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+
+}
+
+.foot-1{
+    background-color: white;
+    font-size: 13px;
+    color: grey;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 10px;
+    /* text-align: center; */
+
+}
+
+.copyright{
+
+    display: flex;
+    background-color: #005387;
+    justify-content: center;
+    align-items: center;
+    height:20vh;
+}
