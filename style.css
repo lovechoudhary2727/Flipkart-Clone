@@ -63,12 +63,15 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
+    padding: 6px 9px;
 }
 
-nav ul li:hover{
+nav ul li a:hover{
     
     font-weight: bold;
-    color: whitesmoke;
+    color: black;
+    background-color: white;
+    border-radius: 3px;
 }
 
 .search{
@@ -95,15 +98,51 @@ nav ul li:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+@keyframes img1 {
+
+    from {
+        transform: translateX(-30vw);
+    }
+    to{
+        transform: translateX(65vw);
+    }
+    
+}
+
+@keyframes img2 {
+
+    from {
+        transform: translateX(0vw);
+    }
+    to{
+        transform: translateX(90vw);
+    }
+    
 }
 
 .slider img{
 
-    width: 90vw;
-    height: 60vh;
+    width: 140vw;
+    height: 75vh;
 
 }
 
+.img1{
+    transform: translateX(-30vw);
+    animation: img1 1s 2s forwards;
+
+}
+
+.img2{
+    transform: translateX(0vw);
+    animation: img2 1s 2s forwards;
+}
+.img3{
+    transform: translateX(30vw);
+}
 .card{
     margin: 10px;
     height: 40vh;
